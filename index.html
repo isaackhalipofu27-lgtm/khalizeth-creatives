@@ -1,211 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <!-- Basic -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>Khalizeth Creatives | Graphic Design, Branding & Web Development</title>
+    <title>Khalizeth Creatives | We Build Brands That Stand Out</title>
 
     <meta name="description"
-        content="Khalizeth Creatives provides professional graphic design, branding, logo design, website development, video editing and digital solutions in Zambia.">
-
-    <meta name="keywords"
-        content="Khalizeth Creatives, Graphic Design Zambia, Branding, Logo Design, Website Development, Video Editing, Social Media Design">
+        content="Khalizeth Creatives provides graphic design, branding, website development, social media management, video editing and creative digital solutions.">
 
     <meta name="author" content="Khalizeth Creatives">
 
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Facebook & WhatsApp Preview) -->
-    <meta property="og:title" content="Khalizeth Creatives">
-    <meta property="og:description"
-        content="Professional Graphic Design, Branding, Website Development and Digital Solutions.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Khalizeth Creatives">
-    <meta name="twitter:description"
-        content="Professional Graphic Design, Branding and Website Development.">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= LOADER ================= -->
+<!-- LOADER -->
 <div class="loader">
-    <span></span>
-    <span></span>
-    <span></span>
+    <div class="loader-logo">
+        <img src="assets/logo.png" alt="Khalizeth Creatives">
+    </div>
+    <div class="loader-line"></div>
 </div>
 
-<!-- ================= NAVIGATION ================= -->
-<header class="nav">
+<!-- NAVIGATION -->
+<header class="nav" id="navbar">
 
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="Khalizeth Creatives Logo">
     </a>
 
     <nav id="menu">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-
-        <a href="#contact" class="btn">Start Project</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="process.html">Process</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html" class="nav-btn">Start Project</a>
     </nav>
 
-    <div class="hamburger" id="hamburger">☰</div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 </header>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
 
-    <div class="bg-animation"></div>
+<!-- HERO -->
+<main>
 
-    <h1>Khalizeth Creatives</h1>
+<section class="hero">
 
-    <h2>
-        We Design <span class="typing"></span>
-    </h2>
+    <div class="hero-grid"></div>
 
-    <p>
-        COMMING SOON!!
+    <div class="hero-content reveal">
 
-             
-        we are open for business.
-    </p>
-
-    <div class="hero-btns">
-        <a href="#work" class="btn">View Work</a>
-        <a href="#contact" class="btn-outline">Get Quote</a>
-    </div>
-
-</section>
-
-<!-- ================= SERVICES ================= -->
-<section id="services" class="section">
-
-    <h2>Our Services</h2>
-
-    <div class="services">
-
-        <div class="service-box">
-            <h3>Website Development</h3>
-            <p>Modern responsive websites for businesses.</p>
+        <div class="hero-badge">
+            <span></span>
+            Creative Digital Solutions
         </div>
 
-        <div class="service-box">
-            <h3>Graphic Design</h3>
-            <p>Professional flyers, logos and complete branding identity.</p>
-        </div>
+        <h1>
+            We Build Brands
+            <span>That Stand Out.</span>
+        </h1>
 
-        <div class="service-box">
-            <h3>Video Editing</h3>
-            <p>Creative promotional videos and social media content.</p>
+        <p>
+            We create professional designs, websites and digital experiences
+            that help businesses communicate, connect and grow.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="portfolio.html" class="btn">
+                View Our Work
+            </a>
+
+            <a href="contact.html" class="btn-outline">
+                Start a Project
+            </a>
         </div>
 
     </div>
 
-</section>
 
-<!-- ================= PORTFOLIO ================= -->
-<section id="work" class="section">
+    <!-- INTERACTIVE HERO VISUAL -->
 
-    <h2>Selected Work</h2>
+    <div class="hero-visual reveal">
 
-    <div class="filters">
-        <button onclick="filterWork('all')">All</button>
-        <button onclick="filterWork('flyers')">Flyers</button>
-        <button onclick="filterWork('branding')">Branding</button>
-        <button onclick="filterWork('video')">Video</button>
-    </div>
+        <div class="hero-glow"></div>
 
-    <div class="grid">
+        <div class="floating-card card-one">
+            <span>GRAPHIC</span>
+            DESIGN
+        </div>
 
-        <div class="card flyers">
-            <img src="images/flyer1.jpg" alt="School Flyer Design by Khalizeth Creatives">
-            <div class="overlay">
-                <h3>School Flyer</h3>
-                <p>Graphic Design</p>
+        <div class="floating-card card-two">
+            WEB
+            <span>DEVELOPMENT</span>
+        </div>
+
+        <div class="hero-image-wrap" id="heroImageWrap">
+
+            <div class="hero-image-inner">
+
+                <img
+                    id="heroImage"
+                    src="images/hero1.jpg"
+                    alt="Khalizeth Creatives Project">
+
             </div>
-        </div>
 
-        <div class="card branding">
-            <img src="images/brand1.jpg" alt="Logo Design by Khalizeth Creatives">
-            <div class="overlay">
-                <h3>Logo Design</h3>
-                <p>Brand Identity</p>
+            <div class="image-number">
+                <span id="imageNumber">01</span>
+                <div></div>
+                <span>03</span>
             </div>
+
         </div>
 
-        <div class="card flyers">
-            <img src="images/flyer2.jpg" alt="Business Flyer Design by Khalizeth Creatives">
-            <div class="overlay">
-                <h3>Business Flyer</h3>
-                <p>Marketing Design</p>
+    </div>
+
+</section>
+
+
+<!-- TRUST / INTRO -->
+
+<section class="intro-section">
+
+    <div class="section-heading reveal">
+
+        <span class="small-label">WHAT WE DO</span>
+
+        <h2>
+            Creative ideas.
+            <span>Professional execution.</span>
+        </h2>
+
+        <p>
+            Khalizeth Creatives helps businesses turn ideas into
+            professional visual and digital experiences.
+        </p>
+
+    </div>
+
+
+    <div class="mini-services">
+
+        <div class="mini-service reveal">
+            <span>01</span>
+            <h3>Design</h3>
+            <p>Visual identities, flyers, graphics and branding.</p>
+        </div>
+
+        <div class="mini-service reveal">
+            <span>02</span>
+            <h3>Web</h3>
+            <p>Modern, responsive websites built for businesses.</p>
+        </div>
+
+        <div class="mini-service reveal">
+            <span>03</span>
+            <h3>Digital</h3>
+            <p>Content and digital solutions for modern brands.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED WORK -->
+
+<section class="featured-section">
+
+    <div class="section-top reveal">
+
+        <div>
+            <span class="small-label">SELECTED WORK</span>
+
+            <h2>
+                A glimpse of what
+                <span>we create.</span>
+            </h2>
+        </div>
+
+        <a href="portfolio.html" class="text-link">
+            View Portfolio →
+        </a>
+
+    </div>
+
+
+    <div class="featured-grid">
+
+        <a href="portfolio.html" class="featured-card large reveal">
+            <img src="images/flyer1.jpg"
+                 alt="Graphic design project">
+
+            <div class="featured-info">
+                <span>GRAPHIC DESIGN</span>
+                <h3>Creative Campaign Design</h3>
             </div>
-        </div>
+        </a>
 
-    
+
+        <a href="portfolio.html" class="featured-card reveal">
+            <img src="images/brand1.jpg"
+                 alt="Brand identity project">
+
+            <div class="featured-info">
+                <span>BRANDING</span>
+                <h3>Brand Identity</h3>
+            </div>
+        </a>
+
+
+        <a href="portfolio.html" class="featured-card reveal">
+            <img src="images/website1.jpg"
+                 alt="Website development project">
+
+            <div class="featured-info">
+                <span>WEB DEVELOPMENT</span>
+                <h3>Digital Experience</h3>
+            </div>
+        </a>
+
     </div>
 
 </section>
 
-<!-- ================= STATS ================= -->
-<section class="stats">
 
-    <div>
-        <h2>50+</h2>
-        <p>Projects</p>
-    </div>
+<!-- CTA -->
 
-    <div>
-        <h2>20+</h2>
-        <p>Clients</p>
-    </div>
+<section class="cta-section">
 
-    <div>
-        <h2>99.5%</h2>
-        <p>Satisfaction</p>
+    <div class="cta-content reveal">
+
+        <span class="small-label">HAVE A PROJECT?</span>
+
+        <h2>
+            Let's turn your idea
+            <span>into something great.</span>
+        </h2>
+
+        <p>
+            Whether you need a flyer, brand identity, website or
+            digital content, let's create something that represents
+            your business professionally.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Let's Work Together →
+        </a>
+
     </div>
 
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
+</main>
 
-    <h2>Contact Us</h2>
 
-   
+<!-- FOOTER -->
 
-    <a class="btn" href="https://wa.me/260779418227">
-        Chat on WhatsApp
-    </a>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer>
-    <p>© 2026 Khalizeth Creatives. All Rights Reserved.</p>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <img src="assets/logo.png" alt="Khalizeth Creatives">
+
+            <p>
+                We Build Brands That Stand Out.
+            </p>
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <h4>Explore</h4>
+
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+
+            <div>
+                <h4>Connect</h4>
+
+                <a href="contact.html">Contact</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Khalizeth Creatives. All Rights Reserved.</p>
+    </div>
+
 </footer>
 
-<!-- ================= LIGHTBOX ================= -->
-<div class="lightbox"></div>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 
 </body>
 </html>
